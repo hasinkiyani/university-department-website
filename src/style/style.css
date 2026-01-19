@@ -70,3 +70,21 @@ body{
 /* Accessibility helpers */
 a:focus{outline:3px solid rgba(11,60,93,.15);outline-offset:2px}
 
+.faculty-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.faculty-member {
+  border: 1px solid #ccc;
+  padding: 15px;
+  flex: 1 1 250px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+
+.faculty-member h2 {
+  margin: 0 0 10px 0;
+}
