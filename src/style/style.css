@@ -14,6 +14,24 @@ body{
   background:#fff;
   line-height:1.6;
 }
+.courses {
+    padding: 40px;
+}
+
+.course-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.course-card h3 {
+    color: #004080;
+}
+
 
 .container{max-width:var(--max-width);margin:0 auto;padding:0 24px}
 
