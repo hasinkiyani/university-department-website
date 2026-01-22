@@ -5,11 +5,10 @@ on:
     branches:
       - develop
 
-environment: development
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: development
 
     steps:
       - name: Deploy to Render (Development)
