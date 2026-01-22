@@ -1,0 +1,23 @@
+name: CD - Development
+
+on:
+  push:
+    branches:
+      - develop
+
+environment: development
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to Render (Development)
+        run: |
+          curl -X POST \
+          -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}" \
+          https://api.render.com/v1/services/${{ secrets.RENDER_SERVICE_ID }}/deploys
+
+- name: Contributor Info
+  run: echo "CI updated by Hasin Falak Kiyanni (hasinkiyani789@gmail.com)"
+
