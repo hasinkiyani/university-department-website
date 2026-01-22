@@ -5,11 +5,10 @@ on:
     branches:
       - main
 
-environment: production
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: production
 
     steps:
       - name: Deploy to Render (Production)
