@@ -1,0 +1,23 @@
+name: CI - Development
+
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker Image
+        run: docker build -t uni-site-dev .
+
+      - name: Build Docker Image
+        run: docker build -t uni-site-dev .
